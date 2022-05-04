@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+html {
+  font-size: 80%;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 0 9%;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  color: #455054;
+}
+
+.heading h1 span {
+  font-size: 4rem;
+  color: #e69d45;
+  border-bottom: 0.8rem solid #e69d45;
+}
+
+.btn {
+  background: #fff;
+  color: #455054;
+  padding: .5rem 3.5rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #e69d45;
+  color: #fff;
+}
+
+.header {
+  background: #455054;
+  width: 100%;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  font-size: 2rem;
+  color: #fff;
+  padding: .8rem;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.header .logo h3 span {
+  color: #e69d45;
+  font-size: 4rem;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu .menuLink {
+  position: relative;
+  color: #fff;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.header .menu .menuLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  width: 100%;
+  height: .3rem;
+  background: #e69d45;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+}
+
+.header .menu .menuLink:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.header .menu p {
+  color: #e69d45;
+  font-size: 1.5rem;
+  padding: 0 .5rem;
+}
+
+.header .menu .icons a i {
+  color: #fff;
+  padding: 0 .3rem;
+  font-size: 2rem;
+}
+
+.header .menu .icons a i:hover {
+  color: #e69d45;
+}
+
+.header .menu .icons .fa-bars {
+  display: none;
+}
+
+.home {
+  background: #d4cfc9;
+  height: 100%;
+}
+
+.home .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.home .box-container .name {
+  font-size: 4rem;
+}
+
+.home .box-container .name h3 {
+  color: #e69d45;
+}
+
+.home .box-container .name h3 span {
+  color: #455054;
+}
+
+.home .box-container .name p {
+  border-bottom: 1rem solid #455054;
+  width: 65%;
+}
+
+.home .box-container .myPic img {
+  margin-top: 2.5rem;
+}
+
+.home .box-container .introduction {
+  margin-left: 2rem;
+}
+
+.home .box-container .introduction h3 {
+  font-size: 4rem;
+  color: #455054;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  width: 96%;
+}
+
+.home .box-container .introduction p {
+  font-size: 3rem;
+  color: #455054;
+}
+
+.home .box-container .introduction span {
+  font-size: 3rem;
+  color: #e69d45;
+}
+
+.about {
+  background: #455054;
+  height: 100%;
+}
+
+.about .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.about .box-container .box {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #2e2e35;
+}
+
+.about .box-container .box .icon {
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.about .box-container .box .icon i {
+  font-size: 5rem;
+}
+
+.about .box-container .box .icon h3 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  background: #455054;
+  height: 100%;
+}
+
+.contact .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.contact .box-container .box h3 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: .8rem;
+}
+
+.contact .box-container .box a {
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  padding: .5rem 0;
+}
+
+.contact .box-container .box a:hover {
+  color: #e69d45;
+}
+
+.contact .box-container .box a:hover i {
+  padding-right: 1.5rem;
+}
+
+.contact .box-container .box i {
+  padding-right: .5rem;
+}
+
+.contact .box-container .box form .email {
+  width: 100%;
+  padding: .8rem 1rem;
+  color: #455054;
+  -webkit-box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.contact .box-container .box form textarea {
+  width: 100%;
+  height: 10rem;
+  padding: .8rem 1rem;
+  color: #455054;
+  -webkit-box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+}
+
+.footer {
+  border-top: 3px solid #e69d45;
+  background: #455054;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer h3 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
